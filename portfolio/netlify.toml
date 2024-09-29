@@ -1,6 +1,6 @@
 [build]
   command = "ng build"
-  publish = "portfolio/dist/portfolio/browser/"  # Ensure this path is correct
+  publish = "dist/portfolio/browser/"
 
   
 [[redirects]]
