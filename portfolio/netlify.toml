@@ -1,0 +1,9 @@
+[build]
+  command = "ng build"
+  publish = "portfolio/dist/portfolio/browser/"  # Ensure this path is correct
+
+  
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

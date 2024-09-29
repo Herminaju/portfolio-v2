@@ -1,0 +1,32 @@
+header {
+    background: #151515 url('../assets/image-bg.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+.social{
+  position: absolute;
+  bottom: 50px; /* Adjust as necessary for spacing from bottom */
+  left: 50%;
+  transform: translateX(-50%); /* Centers the icons horizontally */
+  gap: 15px; /* Space between icons */
+}
+.profile-picture {
+  width: 150px;      /* Set the width of the image */
+  height: 150px;     /* Set the height of the image */
+  object-fit: cover; /* Ensure the image covers the area without distortion */
+  border-radius: 50%; /* Make the image circular */
+  border: 2px solid #fff; /* Optional: Add a border around the image */
+  box-shadow: 0px 4px 6px rgba(236, 234, 234, 0.1); /* Optional: Add a shadow effect */
+}
+
+.about-color {
+  background-color: rgb(255, 253, 253);
+}
+
+.profile-name{
+  font-family:'Times New Roman', Times, serif;
+}
+
+.custom-button{
+  color: rgb(175, 32, 70);
+}
