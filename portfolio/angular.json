@@ -11,50 +11,50 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:application",
-          "options": {
-            "outputPath": "dist/portfolio",
-            "index": "src/index.html",
-            "main": "src/main.ts",
-            "polyfills": "src/polyfills.ts",
-            "tsConfig": "tsconfig.app.json",
-            "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              },
-              "src/favicon.ico"  // Ensure favicon is included
-            ],
-            "styles": [
-              "src/styles.css"
-            ],
-            "scripts": []
-          },
-          "configurations": {
-            "production": {
-              "budgets": [
-                {
-                  "type": "initial",
-                  "maximumWarning": "500kB",
-                  "maximumError": "1MB"
-                },
-                {
-                  "type": "anyComponentStyle",
-                  "maximumWarning": "2kB",
-                  "maximumError": "4kB"
-                }
-              ],
-              "outputHashing": "all",
-              "baseHref": "/"  // Set baseHref for root deployment
-            },
-            "development": {
-              "optimization": false,
-              "extractLicenses": false,
-              "sourceMap": true
-            }
-          },
-          "defaultConfiguration": "production"
+  "builder": "@angular-devkit/build-angular:application",
+  "options": {
+    "outputPath": "dist/portfolio",
+    "index": "src/index.html",
+    "main": "src/main.ts",
+    "polyfills": "src/polyfills.ts",
+    "tsConfig": "tsconfig.app.json",
+    "assets": [
+      {
+        "glob": "**/*",
+        "input": "public"
+      },
+      "src/favicon.ico"
+    ],
+    "styles": [
+      "src/styles.css"
+    ],
+    "scripts": []
+  },
+  "configurations": {
+    "production": {
+      "budgets": [
+        {
+          "type": "initial",
+          "maximumWarning": "500kB",
+          "maximumError": "1MB"
         },
+        {
+          "type": "anyComponentStyle",
+          "maximumWarning": "2kB",
+          "maximumError": "4kB"
+        }
+      ],
+      "outputHashing": "all",
+      "baseHref": "/"
+    },
+    "development": {
+      "optimization": false,
+      "extractLicenses": false,
+      "sourceMap": true
+    }
+  },
+  "defaultConfiguration": "production"
+},
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
