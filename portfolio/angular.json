@@ -24,7 +24,8 @@
         "input": "src",
         "output": "/"
       },
-      "src/favicon.ico"
+      "src/favicon.ico",
+      "_redirects"
     ],
     "styles": [
       "src/styles.css"
